@@ -23,7 +23,7 @@ if (
         echo "<h1>Your password is too short, it must be at least 6 characters</h1>
     <a href='?page=account'class='btn btn-warning' type='submit'>Try to sign up again</a>";
     } else {
-        $check = "SELECT username FROM videobank WHERE username = '$user'";
+        $check = "SELECT username FROM users WHERE username = '$user'";
         $result = $conn->query($check);
 
         if ($result->num_rows > 0) {
