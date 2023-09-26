@@ -23,14 +23,15 @@ if (isset($videoId)) {
 
     $update = "UPDATE videobank SET counter = counter + 1 WHERE video_id = :video_id";
     $st = $pdo->prepare($update);
-    $st->bindParam(':video_id', $videoId, PDO::PARAM_INT);
+    $st->bindParam(':video_id', $videoId, PDO::PARAM_STR);
     $st->execute();
 
 
     $query = "SELECT counter FROM videobank WHERE video_id = :video_id";
     $st = $pdo->prepare($query);
-    $st->bindParam(':video_id', $videoId, PDO::PARAM_INT);
+    $st->bindParam(':video_id', $videoId, PDO::PARAM_STR);
     $st->execute();
+
     $result = $st->fetch(PDO::FETCH_ASSOC);
     $cnt = ($result) ? $result['counter'] : 0;
 }
