@@ -4,7 +4,7 @@
 require_once('db.php');
 if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
-    $pass = $_POST['password'];
+    $pass =md5 ($_POST['password']);
 
 
     if (empty($email) or empty($pass)) {

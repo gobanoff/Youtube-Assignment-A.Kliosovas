@@ -2,8 +2,8 @@
 require_once('db.php');
 $user = $_POST['username'];
 $email = $_POST['email'];
-$pass = $_POST['password'];
-$repass = $_POST['repassword'];
+$pass = md5($_POST['password']);
+$repass = md5($_POST['repassword']);
 
 
 
