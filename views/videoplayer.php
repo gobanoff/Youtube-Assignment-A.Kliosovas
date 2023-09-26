@@ -147,7 +147,7 @@ if (isset($videoId)) {
         <iframe src="<?php echo $videoLink; ?>" allowFullscreen height="680" width="1300"></iframe>
     </div>
     <h1><?php echo $videoTitle; ?></h1>
-    <h3>Download by :<span> <?php echo $name; ?></span></h3>
+    <h3>Uploaded by :<span> <?php echo $name; ?></span></h3>
     <h5 class="cnt"> This video has been watched :
         <span id="viewCount"><?php echo $cnt; ?> </span>
     </h5>
