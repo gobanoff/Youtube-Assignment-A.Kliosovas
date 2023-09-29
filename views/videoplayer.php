@@ -115,7 +115,7 @@ if (isset($videoId)) {
             border-radius: 16px;
             background-color: rgb(235, 240, 240);
             margin-top: 20px;
-            color: green;
+            color: green;width: 1295px;
         }
 
         h4 {
