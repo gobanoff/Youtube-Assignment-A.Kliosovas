@@ -30,7 +30,7 @@
                 <label for="floatingInput"> category</label>
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control" name="video" id="floatingInput">
+                <input type="text" class="form-control" name="video_id" id="floatingInput">
                 <label for="floatingInput"> video</label>
             </div>
             <div class="form-floating">

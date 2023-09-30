@@ -2,14 +2,14 @@
 require_once('db.php');
 $user = $_POST['username'];
 $title = $_POST['videotitle'];
-$vid = $_POST['video'];
+$vid = $_POST['video_id'];
 $cat = $_POST['category'];
 $link = $_POST['link'];
 $desc = $_POST['description'];
 
 if (
     empty($link) or empty($cat) or empty($title)
-    or empty($user) or empty($vid)
+    or empty($user) or empty($vid)or empty($desc)
 ) {
     echo "<h1>Fill in all the fields </h1>";
 } else {
